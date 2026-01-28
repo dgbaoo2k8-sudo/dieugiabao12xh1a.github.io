@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Điểu Gia Bảo | Hành trình chuẩn bị kỳ thi THPT</title>
+
+<style>
+:root{
+    --primary:#1a237e;
+    --secondary:#3f51b5;
+    --accent:#ff9800;
+    --bg:#f4f6fb;
+    --card:#ffffff;
+    --text:#2c2c2c;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+    margin:0;
+    font-family:"Segoe UI", system-ui, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.8;
+}
+
+/* ===== NAV ===== */
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(26,35,126,0.96);
+    backdrop-filter:blur(6px);
+    display:flex;
+    justify-content:center;
+}
+
+nav a{
+    color:#fff;
+    padding:16px 24px;
+    text-decoration:none;
+    font-weight:600;
+    letter-spacing:.3px;
+}
+
+nav a:hover{
+    background:rgba(255,255,255,0.12);
+}
+
+/* ===== HERO ===== */
+header{
+    min-height:100vh;
+    display:grid;
+    place-items:center;
+    padding:40px 20px;
+    background:
+        linear-gradient(135deg, rgba(26,35,126,.9), rgba(63,81,181,.85)),
+        radial-gradient(circle at top right, rgba(255,255,255,0.15), transparent 60%);
+    color:white;
+}
+
+.hero{
+    max-width:1000px;
+    background:rgba(255,255,255,0.12);
+    padding:80px;
+    border-radius:28px;
+    backdrop-filter:blur(12px);
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    opacity:.95;
+}
+
+.hero .btn{margin-top:40px}
+
+/* ===== GLOBAL ===== */
+.container{
+    width:min(1150px,92%);
+    margin:auto;
+}
+
+section{
+    margin:100px auto;
+}
+
+h2{
+    font-size:32px;
+    color:var(--primary);
+    margin-bottom:45px;
+}
+
+h3{
+    color:var(--secondary);
+}
+
+/* ===== GRID & CARD ===== */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:var(--card);
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 18px 40px rgba(0,0,0,.14);
+}
+
+/* ===== TIMELINE ===== */
+.timeline{
+    border-left:4px solid var(--secondary);
+    padding-left:30px;
+}
+
+.timeline div{
+    margin-bottom:22px;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+    display:inline-block;
+    padding:16px 38px;
+    border-radius:40px;
+    background:linear-gradient(90deg,var(--accent),#ff5722);
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:linear-gradient(90deg,var(--secondary),var(--primary));
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:35px;
+    margin-top:100px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== TRANG CHỦ ===== -->
+<header id="trangchu">
+    <div class="hero">
+        <h1>Điểu Gia Bảo</h1>
+        <p>
+            Học sinh lớp <b>12XH1A</b> – Trường <b>THCS – THPT Việt Hoa Quang Chánh</b><br><br>
+            Website này được xây dựng nhằm trình bày quá trình chuẩn bị cho kỳ thi
+            tốt nghiệp THPT – một cột mốc quan trọng trong hành trình học tập và
+            trưởng thành của bản thân tôi.
+        </p>
+        <p>
+            Thông qua website, tôi mong muốn thể hiện nhận thức cá nhân,
+            kế hoạch học tập cụ thể, định hướng nghề nghiệp tương lai
+            cũng như tinh thần trách nhiệm đối với bản thân, gia đình và xã hội.
+        </p>
+        <a href="#hanhtrangtiepung" class="btn">Bắt đầu hành trình</a>
+    </div>
+</header>
+
+<nav>
+    <a href="#trangchu">Trang chủ</a>
+    <a href="#hanhtrangtiepung">Hành trang tiếp ứng</a>
+    <a href="#thongtinkithi">Thông tin kỳ thi</a>
+</nav>
+
+<!-- ===== HÀNH TRANG ===== -->
+<section id="hanhtrangtiepung" class="container">
+<h2>Hành trang tiếp ứng</h2>
+
+<div class="grid">
+    <div class="card">
+        <h3>📘 Kiến thức & ôn luyện</h3>
+        <p>
+            Tôi tập trung ôn luyện các môn thi tốt nghiệp THPT,
+            chú trọng nắm vững kiến thức nền tảng,
+            đồng thời thường xuyên luyện đề minh họa của Bộ GD&ĐT
+            để làm quen với cấu trúc đề thi.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🎓 Định hướng ngành nghề</h3>
+        <p>
+            Tôi định hướng theo học ngành <b>Công tác xã hội</b>,
+            một ngành học mang tính nhân văn,
+            hướng đến việc hỗ trợ những cá nhân và cộng đồng gặp khó khăn.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🧠 Kỹ năng & tâm lý</h3>
+        <p>
+            Bên cạnh kiến thức, tôi rèn luyện kỹ năng quản lý thời gian,
+            giữ tinh thần ổn định, tránh áp lực quá mức
+            và xây dựng sự tự tin khi bước vào phòng thi.
+        </p>
+    </div>
+</div>
+
+<div class="card" style="margin-top:60px">
+    <h3>⏳ Kế hoạch học tập theo giai đoạn</h3>
+    <div class="timeline">
+        <div><b>Giai đoạn 1:</b> Củng cố kiến thức nền tảng, khắc phục lỗ hổng</div>
+        <div><b>Giai đoạn 2:</b> Luyện đề nâng cao, cải thiện tốc độ và độ chính xác</div>
+        <div><b>Giai đoạn 3:</b> Tổng ôn, giữ tinh thần ổn định trước kỳ thi</div>
+    </div>
+</div>
+
+<div class="card" style="margin-top:40px">
+    <h3>🎯 Mục tiêu & cam kết</h3>
+    <p>
+        Mục tiêu của tôi là hoàn thành tốt kỳ thi tốt nghiệp THPT,
+        trở thành sinh viên ngành Công tác xã hội
+        và từng bước đóng góp tích cực cho cộng đồng.
+    </p>
+    <p>
+        Tôi cam kết nỗ lực học tập nghiêm túc,
+        không ngừng hoàn thiện bản thân
+        và chủ động trước những thử thách trong tương lai.
+    </p>
+</div>
+</section>
+
+<!-- ===== THÔNG TIN KỲ THI ===== -->
+<section id="thongtinkithi" class="container">
+<h2>Thông tin kỳ thi tốt nghiệp THPT</h2>
+<p>
+    Các thông tin chính thức về thời gian tổ chức kỳ thi,
+    những điều chỉnh quan trọng và định hướng đổi mới
+    được cập nhật từ Cổng Thông tin Chính phủ.
+</p>
+
+<a class="btn"
+href="https://xaydungchinhsach.chinhphu.vn/thoi-gian-to-chuc-thi-tot-nghiep-thpt-nam-2026-cac-dieu-chinh-co-anh-huong-den-thi-sinh-khi-nao-thi-tot-nghiep-thpt-tren-may-tinh-11925092708572251.htm"
+target="_blank">
+Xem thông tin chính thức kỳ thi THPT 2026
+</a>
+</section>
+
+<footer>
+<p>© 2026 – Điểu Gia Bảo | Lớp 12XH1A – THCS–THPT Việt Hoa Quang Chánh</p>
+</footer>
+
+</body>
+</html>

@@ -16,28 +16,24 @@ color:white;
 overflow-x:hidden;
 }
 
-/* Scroll đẹp */
+/* Scroll */
 ::-webkit-scrollbar{width:8px;}
 ::-webkit-scrollbar-thumb{background:#00f2ff;border-radius:10px;}
 ::-webkit-scrollbar-track{background:black;}
 
 #bgVideo{
 position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
+top:0;left:0;
+width:100%;height:100%;
 object-fit:cover;
 z-index:-3;
 }
 
-/* Overlay nhạc */
+/* Overlay */
 #musicOverlay{
 position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
+top:0;left:0;
+width:100%;height:100%;
 background:rgba(0,0,0,0.75);
 display:flex;
 justify-content:center;
@@ -47,70 +43,47 @@ font-size:28px;
 font-weight:bold;
 color:#00f2ff;
 cursor:pointer;
-transition:opacity 0.8s ease;
+transition:0.8s;
 }
 #musicOverlay.hide{
 opacity:0;
 pointer-events:none;
 }
 
-/* NAVBAR NÂNG CẤP */
+/* Navbar */
 .navbar{
-margin-top:25px;
+margin-top:20px;
 text-align:center;
 }
-
 .navbar a{
 color:#00f2ff;
-text-decoration:none;
 margin:0 15px;
+text-decoration:none;
 font-weight:bold;
-padding:8px 15px;
-border-radius:10px;
-position:relative;
+padding:8px 14px;
+border-radius:8px;
 transition:0.3s;
 }
-
-/* Hiệu ứng neon */
-.navbar a::before{
-content:"";
-position:absolute;
-inset:0;
-border-radius:10px;
-background:linear-gradient(45deg,#00f2ff,transparent,#00f2ff);
-opacity:0;
-transition:0.4s;
-}
-
-.navbar a:hover::before{
-opacity:1;
-filter:blur(8px);
-}
-
 .navbar a:hover{
-color:white;
-box-shadow:0 0 15px #00f2ff,0 0 25px #00f2ff;
-transform:translateY(-2px);
+box-shadow:0 0 15px #00f2ff;
 }
 
-/* PAGE */
+/* Page */
 .page{
 display:none;
 min-height:100vh;
-padding:120px 20px 80px 20px;
+padding:120px 20px 80px;
 justify-content:center;
-align-items:flex-start;
 }
 .active{
 display:flex;
-animation:fade 0.6s ease;
+animation:fade 0.6s;
 }
 @keyframes fade{
 from{opacity:0;transform:translateY(20px);}
-to{opacity:1;transform:translateY(0);}
+to{opacity:1;}
 }
 
-/* BOX glow */
 .box{
 background:rgba(0,0,0,0.5);
 backdrop-filter:blur(6px);
@@ -119,14 +92,9 @@ border-radius:20px;
 max-width:1100px;
 box-shadow:0 0 25px rgba(0,242,255,0.4);
 line-height:1.7;
-transition:0.4s;
 }
 
-.box:hover{
-box-shadow:0 0 40px rgba(0,242,255,0.7);
-}
-
-/* INTRO */
+/* Intro */
 .intro{
 display:flex;
 gap:40px;
@@ -136,55 +104,39 @@ flex-wrap:wrap;
 width:260px;
 border-radius:15px;
 box-shadow:0 0 20px #00f2ff;
-transition:0.4s;
-}
-.intro img:hover{
-transform:scale(1.05);
-box-shadow:0 0 40px #00f2ff;
 }
 
-/* SOCIAL ICON nâng cấp */
+/* Social */
 .social{
-margin-top:20px;
+margin-top:15px;
 display:flex;
-gap:20px;
-align-items:center;
+gap:15px;
 }
-
-.social a{
-position:relative;
-}
-
 .social img{
-width:40px;
-height:40px;
-border-radius:50%;
-transition:0.4s;
+width:38px;
+height:38px;
+transition:0.3s;
 }
-
-/* glow vòng ngoài */
-.social a::before{
-content:"";
-position:absolute;
-top:-5px;left:-5px;
-right:-5px;bottom:-5px;
-border-radius:50%;
-background:linear-gradient(45deg,#00f2ff,transparent,#00f2ff);
-opacity:0;
-filter:blur(10px);
-transition:0.4s;
-}
-
-.social a:hover::before{
-opacity:1;
-}
-
 .social img:hover{
-transform:scale(1.2) rotate(5deg);
-box-shadow:0 0 15px #00f2ff,0 0 30px #00f2ff;
+transform:scale(1.2);
+filter:drop-shadow(0 0 10px #00f2ff);
 }
 
-/* TEXT */
+/* Others */
+.exam-img{
+width:100%;
+max-width:500px;
+border-radius:15px;
+margin:20px 0;
+box-shadow:0 0 20px #00f2ff;
+}
+.school-info{
+margin-top:20px;
+padding:15px;
+border-left:4px solid #00f2ff;
+background:rgba(0,242,255,0.08);
+border-radius:10px;
+}
 .highlight{
 color:#00f2ff;
 font-weight:bold;
@@ -218,8 +170,8 @@ margin-top:15px;
 <!-- MENU -->
 <div class="navbar">
 <a href="#" onclick="showPage(1)">Trang Chủ</a>
-<a href="#" onclick="showPage(2)">Kỳ Thi</a>
-<a href="#" onclick="showPage(3)">Hành Trang</a>
+<a href="#" onclick="showPage(2)">Kỳ Thi Tốt Nghiệp THPT 2026</a>
+<a href="#" onclick="showPage(3)">Hành Trang Tiếp Ứng</a>
 </div>
 
 <!-- SOCIAL -->
@@ -237,11 +189,40 @@ margin-top:15px;
 </a>
 </div>
 
+<div class="school-info">
+<h3>Giới thiệu về trường:</h3>
+<p>Trường THCS & THPT Việt Hoa Quang Chánh là cơ sở giáo dục đào tạo học sinh từ cấp THCS đến THPT, chú trọng phát triển toàn diện về kiến thức, đạo đức và kỹ năng sống. Đặc biệt trường còn đào tạo tiếng Trung với phương pháp giảng dạy hiện đại và hiệu quả. Đội ngũ giáo viên giàu kinh nghiệm, tận tâm giúp học viên phát triển toàn diện các kỹ năng nghe, nói, đọc, viết. Ngoài ra, chương trình học được thiết kế phù hợp với nhiều trình độ, từ cơ bản đến nâng cao.</p>
+<p><b>Địa chỉ:</b><br>
+Số 138 đường Hồ Thị Hương, khu phố 12,<br>
+phường Xuân An,<br>
+thành phố Long Khánh, tỉnh Đồng Nai.
+</p>
+</div>
+
 <h3 class="highlight">⏳ Đếm ngược đến kỳ thi:</h3>
 <p id="countdown"></p>
 
 </div>
 </div>
+</div>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+<div class="box">
+<h1>Kỳ Thi Tốt Nghiệp THPT 2026</h1>
+<img src="./2025-8-11-vn-thi-tn-thpt-som-2026-ngoc.jpg" class="exam-img">
+<p><b>Thời gian:</b> 11-12/6/2026</p>
+<!-- GIỮ NGUYÊN TOÀN BỘ NỘI DUNG CỦA BẠN -->
+</div>
+</div>
+
+<!-- PAGE 3 -->
+<div id="page3" class="page">
+<div class="box">
+<h1>Hành Trang Tiếp Ứng</h1>
+<img src="./NGHE-CONG-TAC-XA-HOI.png" class="exam-img">
+<!-- GIỮ NGUYÊN -->
 </div>
 </div>
 
@@ -271,7 +252,6 @@ const overlay=document.getElementById("musicOverlay");
 
 overlay.addEventListener("click",function(){
 video.muted=false;
-video.volume=1;
 video.play();
 overlay.classList.add("hide");
 setTimeout(()=>overlay.style.display="none",800);
